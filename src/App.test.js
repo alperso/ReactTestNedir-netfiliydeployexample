@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react'; //componenti render edilecek tanımlar
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders learn react link', () => { //render edildginde react linkini kontrol et
+  render(<App />); //render et App Componentini
+  const linkElement = screen.getByText(/learn react/i); //ekrandaki learn react texti varmı
+  expect(linkElement).toBeInTheDocument(); //git bu texti dokümen içinde varmı kontrol et diyorum
 });
